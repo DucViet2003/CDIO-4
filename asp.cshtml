@@ -1,0 +1,32 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="details.aspx.cs" Inherits="DoAnKTTMDT.details" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <asp:Repeater runat="server" ID="rptDe">
+        <ItemTemplate>
+            <div class="image img-fluid">
+                <asp:Image ID="imgProduct" runat="server" ImageUrl='<%# Eval("image") %>' AlternateText="Product Image" />
+            </div>
+            <div class="imformation">
+                <div class="title">
+                    <p>About product</p>
+                </div>
+                <div class="name">
+                    <i class="uil uil-tag-alt" title="Product name"><%# Eval("name_product") %></i>
+                </div>
+                <div class="price">
+                    <i class="uil uil-dollar-sign-alt" title="Product price"><%# Eval("price") %></i>
+                </div>
+                <div class="category">
+                    <i class="uil uil-box" title="Category of product"><%# Eval("name_category") %></i>
+                </div>
+                <div class="buy">
+                     <asp:HyperLink runat="server" ID="hyperlink" NavigateUrl="~/homepage.aspx" OnClick="hyperlink_Click" CssClass="link" Text="Back"></asp:HyperLink>
+                    <asp:Button ID="btnShoppingCart" runat="server" OnClick="btnAddToCart" Text='Buy' CommandArgument='<%# Eval("Id") %>' />
+                  
+                </div>
+            </div>
+        </ItemTemplate>
+    </asp:Repeater>
+</asp:Content>
