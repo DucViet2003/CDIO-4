@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="QuanlyCaffe.exe" version="1.0.0.1" publicKeyToken="6a065d1dce3e21bb" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Iconsmind-Outline-Coffee.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="QuanlyCaffe" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="QuanlyCaffe.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ktZeXEapJvZzBj2H+1vyKPRmsiA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SNqG+4S7XS48Wt3ihYv4Qf8L1fs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuanlyCaffe.exe" size="2596288">
+      <assemblyIdentity name="QuanlyCaffe" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>usjYmDUQEhOF/inaU1ByV5S9/2A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Iconsmind-Outline-Coffee.ico" size="167009">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UKjvBHBrBXztR80Z/7mjyTo52B4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="QL_QUANCAFE.mdf" size="4259840" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vQAPiGTWcr2Z3KL1ipgwBO3WUZc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="QL_QUANCAFE_log.ldf" size="1638400" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3ga3HTiIOF1ZItzxXVpFw/SBiCs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-FO8QLMB\ADMIN" issuerKeyHash="8d745937168a3b3a10bbaa0343acd255e74d498a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>JAW4MALCbD9I1U9HvKwuQ3f9PWQ=</DigestValue></Reference></SignedInfo><SignatureValue>e1jj21FAq84RwcJGMducEmHBWKoPWxeRllovuYwPjIZPxSkVw7NlbSTtUHCELKUWIRvzqZiHsVCc7t6iEIXwOPqzoY1SRzTTaK4DTLTg+qftMPGmSD4dcWhq+Vh/9NjeKEQsx3FxX1fZj0FRjdXjSFbEpswJ9XIF4hyTQlRzCL4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tqiia/97Ix4FiqKuSVey+xp37GQXPd13KGVgbGu2ATamtJnC1a/3TVt6I5LsIdl8YR7e09LNaJZO5TQya9q0hmX17PB8ZhBAEzjxuaq/h0MYTO03F/ZM3CJXFmToQL6my7yW52/KKMAbyVkVnQrjqeMU9HWQqcZHjaitdkHDTtE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="643dfd77432eacbc474fd5483f6cc20230b80524" Description="" Url=""><as:assemblyIdentity name="QuanlyCaffe.exe" version="1.0.0.1" publicKeyToken="6a065d1dce3e21bb" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-FO8QLMB\ADMIN</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>5NUhux4okNr5XrwbdetWp+Q02Cc=</DigestValue></Reference></SignedInfo><SignatureValue>kFIf7Z39WvghCMLwm1x72RxTYL+RNG8YIB9sdkiXdoAlSv62g2H/p2Jii3VjAXRuq6hSicgWWTkZ4rT7UK4RyS0ytN4QwQrcXiuOC8oJ9J5o6yqFMdebbcpGKezP9JKRCrg0ZPHc7Tjhd6dzzwXf62sLH9Aqk6RJoXwJZaFoZpo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tqiia/97Ix4FiqKuSVey+xp37GQXPd13KGVgbGu2ATamtJnC1a/3TVt6I5LsIdl8YR7e09LNaJZO5TQya9q0hmX17PB8ZhBAEzjxuaq/h0MYTO03F/ZM3CJXFmToQL6my7yW52/KKMAbyVkVnQrjqeMU9HWQqcZHjaitdkHDTtE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQVlo0oKQpJ7pD9rq2QdvzQDANBgkqhkiG9w0BAQUFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEYATwA4AFEATABNAEIAXABBAEQATQBJAE4wHhcNMjQwODI2MTExMzAxWhcNMjUwODI2MTcxMzAxWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEYATwA4AFEATABNAEIAXABBAEQATQBJAE4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALaoomv/eyMeBYqirklXsvsad+xkFz3ddyhlYGxrtgE2prSZwtWv901beiOS7CHZfGEe3tPSzWiWTuU0MmvatIZl9ezwfGYQQBM48bmqv4dDGEztNxf2TNwiVxZk6EC+psu8ludvyijAG8lZFZ0K46njFPR1kKnGR42orXZBw07RAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAJpsCzfJ3am9TQhesXfeq9ikmqgExvrUbAIdMrE+G4+zUCSJcMRCV9UwHiKWaXuANT+FfIlqeqWJTv9l9m0k4ogRwLQj2zmVwkezoIDULY4npZbfr/1/k3YB5eMVGK6tpSyRJ6YAQ8qNVp19ianEd4XAKLPZvhgQ6N30X8MynDrM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
